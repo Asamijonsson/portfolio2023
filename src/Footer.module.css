@@ -1,0 +1,8 @@
+.footerNav{
+    display: flex;
+    gap: 50px;
+   justify-content: center;
+
+padding-top: 20px;
+background-color:  rgb(193, 179, 161);
+}

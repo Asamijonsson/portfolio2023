@@ -1,0 +1,23 @@
+.allimg{
+    display: flex;
+    gap: 20px;
+   justify-content: flex-end;
+}
+
+.img{  
+   object-fit: cover;
+   max-width: 22%;
+  
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.ramenlist{
+    list-style: none;
+    font-weight: bold;
+    color: white;
+}

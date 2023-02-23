@@ -1,0 +1,14 @@
+.flexbox{
+    display: flex;
+    gap: 50px;
+   justify-content: flex-end;
+padding-right: 150px;
+padding-top: 20px;
+
+
+}
+
+.link{
+    text-decoration: none;
+}
+

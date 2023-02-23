@@ -1,0 +1,18 @@
+.text {
+  margin-top: 0%;
+  color: rgb(249, 249, 250);
+}
+
+/* .background{
+    width: auto;
+    height: 1650px;
+    background-color: rgb(175, 165, 152);
+} */
+
+.img {
+  display: flex;
+  /* flex-basis: 350px; */
+  object-fit: cover;
+  max-height: 100%;
+  vertical-align: middle;
+}
