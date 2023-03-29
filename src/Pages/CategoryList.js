@@ -97,7 +97,7 @@ const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
 
   
   return (
-    <div className={style.background}>
+    <div className={style.background} id="main-content" >
       <img src={profile1} alt="" />
       <ul className={style.categoryList}>
         <li className={style.categoryList}>

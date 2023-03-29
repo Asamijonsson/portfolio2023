@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import  style from "./App.module.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Pages/Home";
@@ -72,9 +72,11 @@ function App() {
         },
         { name: "Miso Ramen" },
   ]}]
-
+  
+ 
   return (
-    <div className="App">
+    <div className={style.App}>
+   <a href="#main-content" className="skip-link" >Skip to main content</a>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -87,6 +89,7 @@ function App() {
         <Route path="" element={<Ramen menu={receipe} />} />
       </Routes>
       <Footer />
+    
     </div>
   );
 }
