@@ -16,3 +16,25 @@ padding-top: 20px;
     display: hidden;
 }
 
+/* @media screen and (max-width: 768px) {
+    .container {
+      max-width: 768px;
+      flex-wrap: wrap;
+    }
+    img {
+      max-width: 50%;
+    }
+    
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 480px;
+      flex-direction: column;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  } */

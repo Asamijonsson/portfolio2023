@@ -9,10 +9,52 @@
     background-color: rgb(175, 165, 152);
 } */
 
-.img {
+/* .img {
   display: flex;
-  /* flex-basis: 350px; */
-  object-fit: cover;
+   object-fit: cover;
   max-height: 100%;
   vertical-align: middle;
+} */
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+
+
+/* @media screen and (max-width: 768px) {
+  
+ 
+  .container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 768px;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 50%;
+  }
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  
+  
+  .container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 480px;
+    flex-direction: column;
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+} */

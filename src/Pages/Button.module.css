@@ -6,3 +6,18 @@
     font-weight: bold;
   }
   
+
+  @media screen and (max-width: 768px) {
+  
+   .button {
+    font-size: 18px;
+  } 
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 480px) {
+   
+    .button {
+        font-size: 16px;
+      }
+  }

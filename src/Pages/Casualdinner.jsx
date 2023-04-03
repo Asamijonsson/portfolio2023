@@ -23,7 +23,7 @@ const casualdinner = ({ dinnerMenu }) => {
         <img src={casual2} alt="" className={style.img} />
       </div>
       <ul>{casualDinnerFoods}</ul>
-      <p></p>
+    
     </>
   );
 };

@@ -21,7 +21,7 @@ const ramen = ({ramenMenu})=>{
         <img src={ramen4} alt="" className={style.img} />
         
       </div>
-        <p>{ramenList}</p>
+        <ul>{ramenList}</ul>
         </>
     )
    
