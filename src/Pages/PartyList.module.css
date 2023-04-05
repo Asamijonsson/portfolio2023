@@ -21,3 +21,16 @@
     font-weight: bold;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .foodlist {
+     font-weight: normal;
+   } 
+   }
+   
+   /* Mobile styles */
+   @media screen and (max-width: 480px) {
+     .foodlist {
+         font-weight: normal;
+       } 
+   }

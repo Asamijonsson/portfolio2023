@@ -5,7 +5,7 @@ import style from "./Home.module.css"
 const Home =()=>{
   
     return(
-    <div className={style.background}>
+    <div className={style.background} id="main-content">
         {/* <img src={Profil} alt=""/> */}
           <img src={foodmain} alt="" className={style.img}/>
       

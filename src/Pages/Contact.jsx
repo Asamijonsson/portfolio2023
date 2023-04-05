@@ -2,7 +2,7 @@ import colorstyle from "../Color.module.css"
 import style from "./Contact.module.css"
 const Contact =()=>{
     return(
-        <div role="form" id="contact-info" aria-label="Contact imformation">
+        <div role="form" id="main-content" aria-label="Contact imformation">
             <h3 className={colorstyle.primary}>Send message</h3>
             <label className={style.title} for="inp" aria-labelledby="inp">Title</label><br />
             <input className={style.input} type="text" id="inp" aria-required="true" aria-roledescription="input" required/><br />
