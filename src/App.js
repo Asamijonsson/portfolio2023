@@ -75,8 +75,9 @@ function App() {
   
  
   return (
-    <div className={style.App}>
+    <div>
    <a href="#main-content" className={style.skipLink} id="skipLink" >Skip to main content</a>
+   <div  className={style.MainApp}>
       <Header />
       <Routes>
       <Route path="/" element={<Home />} />     
@@ -89,7 +90,7 @@ function App() {
         <Route path="" element={<Ramen menu={receipe} />} />
       </Routes>
       <Footer />
-    
+      </div>
     </div>
   );
 }
