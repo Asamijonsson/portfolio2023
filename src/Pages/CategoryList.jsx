@@ -42,7 +42,7 @@ const CategoryList = ({ menu }) => {
   };
 
   const handleCasualDinnerAria = () => {
-    var n = document.getElementById("btn2").getAttribute("aria-expanded");
+    let n = document.getElementById("btn2").getAttribute("aria-expanded");
     if (n === "true") {
       n = "false";
     } else {
@@ -52,7 +52,7 @@ const CategoryList = ({ menu }) => {
   };
 
   const handleSushiAria = () => {
-    var n = document.getElementById("btn3").getAttribute("aria-expanded");
+    let n = document.getElementById("btn3").getAttribute("aria-expanded");
     if (n === "true") {
       n = "false";
     } else {
@@ -62,7 +62,7 @@ const CategoryList = ({ menu }) => {
   };
 
   const handleRamenAria = () => {
-    var n = document.getElementById("btn4").getAttribute("aria-expanded");
+    let n = document.getElementById("btn4").getAttribute("aria-expanded");
     if (n === "true") {
       n = "false";
     } else {

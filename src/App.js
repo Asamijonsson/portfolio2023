@@ -76,10 +76,10 @@ function App() {
  
   return (
     <div className={style.App}>
-   <a href="#main-content" className="skip-link" >Skip to main content</a>
+   <a href="#main-content" className={style.skipLink} id="skipLink" >Skip to main content</a>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} />     
         <Route path="aboutme" element={<Aboutme />} />
         <Route path="contact" element={<Contact />} />
         <Route path="works" element={<Works menu={receipe} />} />

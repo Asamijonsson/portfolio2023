@@ -1,5 +1,10 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+*:focus {
+  background-color: #dcdc81;
+  color: #BF1722;
 }
 
 .App-logo {
@@ -39,14 +44,20 @@
 
   .skipLink {
     position: absolute;
-      /* top: -40px; */ 
-      left: 0;
-      z-index: 999;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
   }
 
-  .skip-link:focus {
-    top: 0;
+  .skipLink:focus {
+    position: static;
+    width: auto;
+    height: auto;
   }
+
+
 
   @media screen and (max-width: 768px) {
   
