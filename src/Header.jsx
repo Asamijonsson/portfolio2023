@@ -11,7 +11,7 @@ setnavOpen(!navOpen)
   }
  
   return (
-    <div>
+    <nav className={style.nav}>
       <button className={style.toggleButton} onClick={toggleHamburger} >
         <span className={style.bar}></span>
         <span className={style.bar}></span>
@@ -24,7 +24,7 @@ setnavOpen(!navOpen)
       <NavLink/>
       </nav>
   }
-       </div>
+       </nav>
       
   );
 };

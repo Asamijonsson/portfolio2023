@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bodyColor);
 }
 
 code {
@@ -15,7 +16,4 @@ code {
 
 :root{
   --bodyColor: rgb(193, 179, 161)
-}
-body{
-  background-color: var(--bodyColor);
 }
