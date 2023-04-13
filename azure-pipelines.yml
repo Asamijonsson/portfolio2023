@@ -28,3 +28,11 @@ steps:
   displayName: 'Publish Artifact: drop'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1 (812c26a1-a63f-4353-8019-76e2caf7d8af)'
+    appType: 'webApp'
+    WebAppName: 'Profile2023'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
