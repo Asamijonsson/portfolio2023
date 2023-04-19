@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import {React} from "react"
 import  style from "./App.module.css";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,6 +11,7 @@ import Party from "./Pages/Party";
 import Casualdinner from "./Pages/Casualdinner";
 import Sushi from "./Pages/Sushi";
 import Ramen from "./Pages/Ramen";
+
 
 function App() {
   const receipe = [
@@ -73,12 +75,12 @@ function App() {
         { name: "Miso Ramen" },
   ]}]
   
- 
+
   return (
     <div>
    <a href="#main-content" className={style.skipLink} id="skipLink" >Skip to main content</a>
    <div  className={style.MainApp}>
-      <Header />
+      <Header/>
       <Routes>
       <Route path="/" element={<Home />} />     
         <Route path="aboutme" element={<Aboutme />} />

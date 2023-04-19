@@ -18,21 +18,21 @@ const partyList = ({ partyMenu }) => {
     .map(({ categoryName, foodName }) => ({ categoryName, foodName }));
 
   const appetizers = appetizerList[0].foodName.map((i) => (
-    <li className={style.foodlist}>
+    <li className={style.foodlist} key={i}>
       <p id="sect1" role="region" aria-labelledby="btn1">
         {i.name}
       </p>
     </li>
   ));
   const mainfood = mainfoodList[0].foodName.map((i) => (
-    <li className={style.foodlist}>
+    <li className={style.foodlist} key={i}>
       <p id="sect1" role="region" aria-labelledby="btn1">
         {i.name}
       </p>
     </li>
   ));
   const dessert = dessertList[0].foodName.map((i) => (
-    <li className={style.foodlist}>
+    <li className={style.foodlist} key={i}>
       <p id="sect1" role="region" aria-labelledby="btn1">
         {i.name}
       </p>

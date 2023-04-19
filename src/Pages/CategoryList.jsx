@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import PartyList from "./PartyList";
 import Casualdinner from "./Casualdinner";
 import Sushi from "./Sushi";

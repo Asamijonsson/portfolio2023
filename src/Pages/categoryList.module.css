@@ -1,3 +1,8 @@
+*:focus {
+  background-color: #9e9d97;
+  color: #ffffff;
+}
+
 .background{
     padding-right: 150px;
 padding-top: 20px;
