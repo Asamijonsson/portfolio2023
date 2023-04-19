@@ -1,9 +1,8 @@
 import { useState } from "react";
-import name from "../src/image/Name.png";
 import style from "./Header.module.css";
-import JPNavLink from "./JapaneseNavLink";
+import JPNavLink from "./NavLinkJP";
 
-const Header = () => {
+const Header = ({language}) => {
   const [navOpen, setnavOpen] = useState(false);
 
   const toggleHamburger = () => {
@@ -12,7 +11,6 @@ const Header = () => {
 
   return (
     <nav className={style.nav}>
-      <img src={name} alt="" className={style.img} />
       <button className={style.toggleButton} onClick={toggleHamburger}>
         <span className={style.bar}></span>
         <span className={style.bar}></span>
@@ -20,7 +18,7 @@ const Header = () => {
       </button>
       {!navOpen ? (
         <nav className={style.navbar}>
-          <JPNavLink />{" "}
+          <JPNavLink language={language}/>{" "}
         </nav>
       ) : (
         <nav className={style.navHamburger}>

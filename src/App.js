@@ -1,17 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import {React} from "react"
-import  style from "./App.module.css";
+import { React} from "react";
+import style from "./App.module.css";
 import MainHeader from "./MainHeader";
 import Footer from "./Footer";
 import Home from "./Pages/Home";
 import Aboutme from "./Pages/Aboutme";
 import Contact from "./Pages/Contact";
 import Works from "./Pages/Works";
-import Party from "./Pages/Party";
-import Casualdinner from "./Pages/Casualdinner";
-import Sushi from "./Pages/Sushi";
-import Ramen from "./Pages/Ramen";
 
+import AboutmeJP from "./PagesJP/AboutmeJP";
 
 function App() {
   const receipe = [
@@ -21,12 +18,9 @@ function App() {
       subcategory: [
         {
           categoryName: "appetizers",
-          foodName: [
-            { name: "Kimchi" },
-            { name: "Harumaki" },
-          ],
+          foodName: [{ name: "Kimchi" }, { name: "Harumaki" }],
         },
-                {
+        {
           categoryName: "main",
           foodName: [
             {
@@ -35,11 +29,10 @@ function App() {
             { name: "Tonkatsu" },
           ],
         },
-        {categoryName:"dessert",
-      foodName:[
-        {name:"Goma dango"},
-        {name:"Matcha ice cream"}
-      ]}
+        {
+          categoryName: "dessert",
+          foodName: [{ name: "Goma dango" }, { name: "Matcha ice cream" }],
+        },
       ],
     },
 
@@ -62,7 +55,6 @@ function App() {
           name: "Maki Sushi",
         },
         { name: "Nigiri" },
-      
       ],
     },
     {
@@ -73,25 +65,31 @@ function App() {
           name: "Tonkotsu Ramen",
         },
         { name: "Miso Ramen" },
-  ]}]
-  
+      ],
+    },
+  ];
+
+
 
   return (
     <div>
-   <a href="#main-content" className={style.skipLink} id="skipLink" >Skip to main content</a>
-   <div  className={style.MainApp}>
-      <MainHeader/>
-      <Routes>
-      <Route path="/" element={<Home />} />     
-        <Route path="aboutme" element={<Aboutme />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="works" element={<Works menu={receipe} />} />
-        <Route path="" element={<Party menu={receipe} />} />
-        <Route path="" element={<Casualdinner menu={receipe} />} />
-        <Route path="" element={<Sushi menu={receipe} />} />
-        <Route path="" element={<Ramen menu={receipe} />} />
-      </Routes>
-      <Footer />
+      <a href="#main-content" className={style.skipLink} id="skipLink">
+        Skip to main content
+      </a>
+      <div className={style.MainApp}>
+     
+        <MainHeader />
+       
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="aboutme" element={<Aboutme />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="works" element={<Works menu={receipe} />} />
+          <Route path="aboutmejp" element={<AboutmeJP />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="works" element={<Works menu={receipe} />} />
+        </Routes>
+        <Footer />
       </div>
     </div>
   );
