@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import {React} from "react"
 import  style from "./App.module.css";
-import Header from "./Header";
+import MainHeader from "./MainHeader";
 import Footer from "./Footer";
 import Home from "./Pages/Home";
 import Aboutme from "./Pages/Aboutme";
@@ -80,7 +80,7 @@ function App() {
     <div>
    <a href="#main-content" className={style.skipLink} id="skipLink" >Skip to main content</a>
    <div  className={style.MainApp}>
-      <Header/>
+      <MainHeader/>
       <Routes>
       <Route path="/" element={<Home />} />     
         <Route path="aboutme" element={<Aboutme />} />

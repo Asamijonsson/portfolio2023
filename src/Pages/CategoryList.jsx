@@ -31,7 +31,7 @@ const CategoryList = ({ menu }) => {
   };
 
   const handlePartyAria = () => {
-    var n = document.getElementById("btn1").getAttribute("aria-expanded");
+    let n = document.getElementById("btn1").getAttribute("aria-expanded");
     if (n === "true") {
       n = "false";
     } else {

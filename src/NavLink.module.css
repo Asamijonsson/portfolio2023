@@ -2,11 +2,20 @@
   display: flex;
   gap: 50px;
   justify-content: flex-end;
-  padding-right: 150px;
+  padding-right: 50px;
 }
 
 .link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: flex;
+    gap: 13px;
+    font-size: 13px;
+   
+  }
 }
 
 @media screen and (max-width: 768px) {
