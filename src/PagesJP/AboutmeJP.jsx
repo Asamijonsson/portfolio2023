@@ -10,15 +10,11 @@ const AboutmeJP =()=>{
         <h2>About me</h2>
         <div className={style.text}>
           <p>
-            ご覧いただきありがとうございます。 My name is Asami, I'm a frontend developer and also chef from
-            Japan. I built this website to showcase my frontend development
-            skills. The website is Screen Reader-friendly, so please feel free
-            to test it using your Screen Reader application. This is just my
-            portfolio and all photos and artwork are copyrighted to me, so
-            please do not use them without permission. However, if you like my
-            website and are interested in using it for your restaurant, or if
-            you would like to try my food based on the photos, please don't
-            hesitate to contact me!
+            ご覧いただきありがとうございます。 このウェブサイトはわたしが今までフロントエンドの勉強習作ですが
+            調理師として海外で10年ほど仕事もしていました。“作品”の中にある写真は実際に自分で作ってきたものです。
+            このサイトやわたしの作品に興味を持ってくださったなら幸いです。
+            御用の際はコンタクトからメッセージを送ってください。
+            
           </p>
         </div>
       </article>

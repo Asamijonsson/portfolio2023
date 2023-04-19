@@ -18,6 +18,8 @@
   color: white;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 1000px) {

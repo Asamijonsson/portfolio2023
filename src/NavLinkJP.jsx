@@ -19,7 +19,7 @@ const NavLinkJP = () => {
       <Link to={"/aboutmejp"} className={style.link}>
         <h3 className={colorstyle.primary}>About Me</h3>
       </Link>
-      <Link to={"/contact"} className={style.link} >
+      <Link to={"/contactjp"} className={style.link} >
         <h3 className={colorstyle.primary}>コンタクト</h3>
       </Link>
     </div>
