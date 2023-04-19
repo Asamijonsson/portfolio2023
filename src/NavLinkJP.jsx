@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import style from "./NavLink.module.css";
+import style from "./NavLinkJP.module.css";
 import colorstyle from "./Color.module.css";
 const NavLinkJP = () => {
   
