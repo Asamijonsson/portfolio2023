@@ -98,8 +98,9 @@ const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
   return (
     <div className={style.background} id="main-content" >
       <img className={style.img} src={profile1} alt="" />
+      <div className={style.categoryContainer}>
       <ul className={style.categoryList}>
-        <li className={style.categoryList}>
+        <li className={style.categoryitem}>
           <button
             className={styles.button}
             aria-expanded="false"
@@ -113,10 +114,9 @@ const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
           >
             Party
           </button>
-        </li>{" "}
+        </li>
         {showParty ? <PartyList partyMenu={partyMenu} /> : null}
-
-        <li className={style.categoryList}>
+        <li className={style.categoryitem}>
           <button
             className={styles.button}
             aria-expanded="false"
@@ -128,11 +128,11 @@ const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
               handleCasualDinnerAria();
             }}
           >
-            Casual Dinner{" "}
+            Casual Dinner
           </button>
         </li>
         {showCasualDinner ? <Casualdinner dinnerMenu={dinnerMenu} /> : null}
-        <li className={style.categoryList}>
+        <li className={style.categoryitem}>
           <button
             className={styles.button}
             aria-expanded="false"
@@ -144,11 +144,11 @@ const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
               handleSushiAria();
             }}
           >
-            Sushi{" "}
+            Sushi
           </button>
         </li>
         {showSushi ? <Sushi sushiMenu={sushiMenu} /> : null}
-         <li className={style.categoryList}>
+         <li className={style.categoryitem}>
           <button
             className={styles.button}
             aria-expanded="false"
@@ -160,13 +160,13 @@ const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
               handleRamenAria();
             }}
           >
-           Ramen{" "}
+           Ramen
           </button>
         </li>
         {showRamen ? <Ramen ramenMenu={ramenMenu} /> : null}
       </ul>
 
-     
+      </div>
     </div>
   );
 };
