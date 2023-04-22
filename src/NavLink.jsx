@@ -6,13 +6,12 @@ import colorstyle from "./Color.module.css";
 const NavLink = () => {
   return (
     <div className={style.navbar}>
-      {/* <a href="#skiplink" className={colorstyle.primary} >home */}
       <div>
         <Link to={"/"} className={style.link} reloadDocument>
           <h3 className={colorstyle.primary}>Home</h3>
         </Link>
       </div>
-      {/* </a> */}
+
       <Link to={"/works"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Works</h3>
       </Link>
