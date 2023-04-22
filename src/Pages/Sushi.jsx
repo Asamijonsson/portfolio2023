@@ -21,7 +21,7 @@ const sushi = ({sushiMenu})=>{
         <img src={sushi4} alt="" className={style.img} />
         
       </div>
-        <p>{sushiList}</p>
+        {/* <p>{sushiList}</p> */}
         </>
     )
 }

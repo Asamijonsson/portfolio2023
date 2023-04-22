@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact";
 import Works from "./Pages/Works";
 
 import AboutmeJP from "./PagesJP/AboutmeJP";
-import ContactJP from "./PagesJP/ContactJP"
+import ContactJP from "./PagesJP/ContactJP";
 
 function App() {
   const receipe = [
@@ -71,7 +71,7 @@ function App() {
   ];
 
   return (
-    <div>
+    <div id="app">
       <a href="#main-content" className={style.skipLink} id="skipLink">
         Skip to main content
       </a>

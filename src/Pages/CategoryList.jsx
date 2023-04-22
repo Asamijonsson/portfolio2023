@@ -2,7 +2,7 @@ import { useState } from "react";
 import PartyList from "./PartyList";
 import Casualdinner from "./Casualdinner";
 import Sushi from "./Sushi";
-import Ramen from "./Ramen"
+import Ramen from "./Ramen";
 import styles from "./Button.module.css";
 import style from "./categoryList.module.css";
 
@@ -12,7 +12,6 @@ const CategoryList = ({ menu }) => {
   const [showCasualDinner, setshowCasualDinner] = useState(false);
   const [showSushi, setShowSushi] = useState(false);
   const [showRamen, setShowRamen] = useState(false);
- 
 
   const handleShowPartyClick = () => {
     setShowParty(!showParty);
@@ -78,7 +77,7 @@ const CategoryList = ({ menu }) => {
     foodName,
   }));
 
-  const casualdinner = menu  
+  const casualdinner = menu
     .filter((i) => i.category === "Casual dinner")
     .map(({ id, category, foodName }) => ({ id, category, foodName }));
   const dinnerMenu = casualdinner[0].foodName.map(({ name }) => ({ name }));
@@ -91,82 +90,81 @@ const CategoryList = ({ menu }) => {
   const ramen = menu
     .filter((i) => i.category === "Ramen")
     .map(({ id, category, foodName }) => ({ id, category, foodName }));
-const ramenMenu =ramen[0].foodName.map(({name})=>({name}))
+  const ramenMenu = ramen[0].foodName.map(({ name }) => ({ name }));
 
-
-  
   return (
-    <div className={style.background} id="main-content" >
+    <div className={style.background} id="main-content">
       <img className={style.img} src={profile1} alt="" />
+     
       <div className={style.categoryContainer}>
-      <ul className={style.categoryList}>
-        <li className={style.categoryitem}>
-          <button
-            className={styles.button}
-            aria-expanded="false"
-            aria-controls="sect1"
-            id="btn1"
-            type="button"
-            onClick={() => {
-              handleShowPartyClick();
-              handlePartyAria();
-            }}
-          >
-            Party
-          </button>
-        </li>
-        {showParty ? <PartyList partyMenu={partyMenu} /> : null}
-        <li className={style.categoryitem}>
-          <button
-            className={styles.button}
-            aria-expanded="false"
-            aria-controls="sect2"
-            id="btn2"
-            type="button"
-            onClick={() => {
-              handleShowCasualClick();
-              handleCasualDinnerAria();
-            }}
-          >
-            Casual Dinner
-          </button>
-        </li>
-        {showCasualDinner ? <Casualdinner dinnerMenu={dinnerMenu} /> : null}
-        <li className={style.categoryitem}>
-          <button
-            className={styles.button}
-            aria-expanded="false"
-            aria-controls="sect3"
-            id="btn3"
-            type="button"
-            onClick={() => {
-              handleShowSushiClick();
-              handleSushiAria();
-            }}
-          >
-            Sushi
-          </button>
-        </li>
-        {showSushi ? <Sushi sushiMenu={sushiMenu} /> : null}
-         <li className={style.categoryitem}>
-          <button
-            className={styles.button}
-            aria-expanded="false"
-            aria-controls="sect4"
-            id="btn4"
-            type="button"
-            onClick={() => {
-              handleShowRamenClick();
-              handleRamenAria();
-            }}
-          >
-           Ramen
-          </button>
-        </li>
-        {showRamen ? <Ramen ramenMenu={ramenMenu} /> : null}
-      </ul>
-
+        <ul className={style.categoryList}>
+          <li className={style.categoryitem}>
+            <button
+              className={styles.button}
+              aria-expanded="false"
+              aria-controls="sect1"
+              id="btn1"
+              type="button"
+              onClick={() => {
+                handleShowPartyClick();
+                handlePartyAria();
+              }}
+            >
+              Party
+            </button>
+          </li>
+          {showParty ? <PartyList partyMenu={partyMenu} /> : null}
+          <li className={style.categoryitem}>
+            <button
+              className={styles.button}
+              aria-expanded="false"
+              aria-controls="sect2"
+              id="btn2"
+              type="button"
+              onClick={() => {
+                handleShowCasualClick();
+                handleCasualDinnerAria();
+              }}
+            >
+              Casual Dinner
+            </button>
+          </li>
+          {showCasualDinner ? <Casualdinner dinnerMenu={dinnerMenu} /> : null}
+          <li className={style.categoryitem}>
+            <button
+              className={styles.button}
+              aria-expanded="false"
+              aria-controls="sect3"
+              id="btn3"
+              type="button"
+              onClick={() => {
+                handleShowSushiClick();
+                handleSushiAria();
+              }}
+            >
+              Sushi
+            </button>
+          </li>
+          {showSushi ? <Sushi sushiMenu={sushiMenu} /> : null}
+          <li className={style.categoryitem}>
+            <button
+              className={styles.button}
+              aria-expanded="false"
+              aria-controls="sect4"
+              id="btn4"
+              type="button"
+              onClick={() => {
+                handleShowRamenClick();
+                handleRamenAria();
+              }}
+            >
+              Ramen
+            </button>
+          </li>
+          {showRamen ? <Ramen ramenMenu={ramenMenu} /> : null}
+        </ul>
       </div>
+     
     </div>
   );
 };

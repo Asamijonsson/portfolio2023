@@ -12,6 +12,7 @@
     max-width: 50%;
   }
 
+
 .button {
   background-color: rgb(193, 179, 161);
   border: none;
@@ -28,11 +29,12 @@
         gap: 10px;
         justify-content: flex-end;
         padding-right: 50px;
-      }}
+      }
+    }
 
 @media screen and (max-width: 768px) {
   .img {
-    display: flex;
+    display: none;
     max-width: 50%;
   }
   .button {
