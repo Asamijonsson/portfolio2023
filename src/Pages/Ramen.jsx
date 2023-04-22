@@ -5,13 +5,13 @@ import ramen3 from "../image/ramen/ramen3.JPG"
 import ramen4 from "../image/ramen/ramen4.JPG"
 
 const ramen = ({ramenMenu})=>{
-    const ramenList = ramenMenu.map((i) => (
-        <li className={style.ramenlist}>
-          <p id="sect4" role="region" aria-labelledby="btn4">
-            {i.name}
-          </p>
-        </li>
-         ));
+    // const ramenList = ramenMenu.map((i) => (
+    //     <li className={style.ramenlist}>
+    //       <p id="sect4" role="region" aria-labelledby="btn4">
+    //         {i.name}
+    //       </p>
+    //     </li>
+    //      ));
     return(
         <>
          <div className={style.allimg}>

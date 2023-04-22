@@ -5,13 +5,13 @@ import sushi3 from "../image/sushi/sushi3.JPG"
 import sushi4 from "../image/sushi/sushi4.JPG"
 
 const sushi = ({sushiMenu})=>{
-    const sushiList = sushiMenu.map((i) => (
-        <li className={style.sushilist}>
-          <p id="sect3" role="region" aria-labelledby="btn3">
-            {i.name}
-          </p>
-        </li>
-         ));
+    // const sushiList = sushiMenu.map((i) => (
+    //     <li className={style.sushilist}>
+    //       <p id="sect3" role="region" aria-labelledby="btn3">
+    //         {i.name}
+    //       </p>
+    //     </li>
+    //      ));
     return(
         <>
          <div className={style.allimg}>
