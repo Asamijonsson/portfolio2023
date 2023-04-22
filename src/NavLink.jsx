@@ -7,7 +7,7 @@ const NavLink = () => {
   return (
     <div className={style.navbar}>
       <div>
-        <Link to={"/"} className={style.link} >
+        <Link to={"/"} className={style.link} reloadDocument>
           <h3 className={colorstyle.primary}>Home</h3>
         </Link>
       </div>
