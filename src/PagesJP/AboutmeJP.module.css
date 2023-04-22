@@ -8,3 +8,23 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .aboutmeJpLink{
+        display: flex;
+    justify-content: right;
+    padding-right: 50px;  
+    text-decoration: none;
+    color: white;
+    }
+
+    @media screen and (max-width: 480px) {
+        .aboutmeJpLink{
+         padding-left: 200px;
+       
+        }
+         .text{
+         font-size: 10px;
+        }
+        
+       }
+     

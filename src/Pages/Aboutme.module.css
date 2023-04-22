@@ -1,4 +1,14 @@
-.text{
+/* .background{
+    text-align: center;
+  
+} */
+
+/* .img{
+    display: flex;
+    justify-content: right;
+   } */
+
+.maintext{
 padding-left: 130px;
 padding-right: 130px;
 }
@@ -8,3 +18,26 @@ padding-right: 130px;
     padding-left: 30px;
     padding-right: 30px;
 }
+.aboutmeLink{
+    display: flex;
+justify-content: right;
+padding-right: 50px;  
+text-decoration: none;
+color: white;
+}
+
+/* @media screen and (max-width: 768px) {
+ 
+  }
+   */
+  /* Mobile styles */
+  @media screen and (max-width: 480px) {
+   .aboutmeLink{
+    padding-left: 200px;
+  
+   }
+    .text{
+    font-size: 10px;
+   }
+   
+  }

@@ -1,15 +1,17 @@
 import style from "./Aboutme.module.css";
 import aboutme from "../image/aboutme.JPG";
 import Knowledge from "./Knowledge";
+import { Link } from "react-router-dom";
 // import colorstyle from "../Color.module.css"
 
 const Aboutme = () => {
   return (
     <div className={style.background}>
-      <img src={aboutme} alt="" className={style.img} />
+      <img src={aboutme} alt="" className={style.aboutmeimg} />
+      <Link to={"/aboutmejp"} className={style.aboutmeLink}>Japanese</Link>
       <article>
         <h2>About me</h2>
-        <div className={style.text}>
+        <div className={style.maintext}>
           <p>
             Hello! My name is Asami, I'm a frontend developer and also chef from
             Japan. I built this website to showcase my frontend development

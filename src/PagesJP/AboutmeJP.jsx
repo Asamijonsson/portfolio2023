@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
 import style from "./AboutmeJP.module.css";
 import aboutme from "../image/aboutme.JPG";
 import Knowledge from "../Pages/Knowledge";
+
 const AboutmeJP =()=>{
     return(
         <div>
  <div className={style.background}>
       <img src={aboutme} alt="" className={style.img} />
+      <Link to={"/aboutme"} className={style.aboutmeJpLink}>English</Link>
       <article>
         <h2>About me</h2>
         <div className={style.text}>
