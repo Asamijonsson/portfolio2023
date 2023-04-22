@@ -7,7 +7,6 @@ import Home from "./Pages/Home";
 import Aboutme from "./Pages/Aboutme";
 import Contact from "./Pages/Contact";
 import Works from "./Pages/Works";
-
 import AboutmeJP from "./PagesJP/AboutmeJP";
 import ContactJP from "./PagesJP/ContactJP";
 

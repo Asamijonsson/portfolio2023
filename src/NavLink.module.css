@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 1000px) {
   .navbar {
-    display: flex;
+    display: flex-end;
     gap: 13px;
     font-size: 13px;
    

@@ -44,7 +44,7 @@ const partyList = ({ partyMenu }) => {
     <>
       <div className={style.allimg}>
         <img src={appetizer1} alt="" className={style.img} />
-        <img src={appetizer5} alt="" className={style.img} />
+        <img src={appetizer5} alt="okonomi yaki" className={style.img} />
         <img src={appetizer3} alt="" className={style.img} />
         <img src={appetizer2} alt="" className={style.img} />
       </div>

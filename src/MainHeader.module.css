@@ -35,8 +35,7 @@
 @media screen and (max-width: 768px) {
   .img {
     display: none;
-    max-width: 50%;
-  }
+    }
   .button {
     font-size: 10px;
   }
@@ -48,11 +47,8 @@
 
 @media screen and (max-width: 480px) {
   .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-  }
+    display: none;
+      }
   .mainheader {
     display: flex;
     gap: 10px;
