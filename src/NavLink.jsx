@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { React } from "react";
-
+  
 import style from "./NavLink.module.css";
 import colorstyle from "./Color.module.css";
 
