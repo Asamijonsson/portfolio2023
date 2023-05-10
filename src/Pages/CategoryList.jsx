@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import PartyList from "./PartyList";
 import Casualdinner from "./Casualdinner";
 import Sushi from "./Sushi";
@@ -92,13 +93,28 @@ const CategoryList = ({ menu }) => {
     .map(({ id, category, foodName }) => ({ id, category, foodName }));
   const ramenMenu = ramen[0].foodName.map(({ name }) => ({ name }));
 
+  const list = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
+
+  const item = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  };
+
   return (
     <div className={style.background} id="main-content">
       <img className={style.img} src={profile1} alt="" />
-     
+
       <div className={style.categoryContainer}>
-        <ul className={style.categoryList}>
-          <li className={style.categoryitem}>
+        <motion.ul
+          initial="hidden"
+          animate="visible"
+          variants={list}
+          className={style.categoryList}
+        >
+          <motion.li variants={item} className={style.categoryitem}>
             <button
               className={styles.button}
               aria-expanded="false"
@@ -112,9 +128,9 @@ const CategoryList = ({ menu }) => {
             >
               Party
             </button>
-          </li>
+          </motion.li>
           {showParty ? <PartyList partyMenu={partyMenu} /> : null}
-          <li className={style.categoryitem}>
+          <motion.li variants={item} className={style.categoryitem}>
             <button
               className={styles.button}
               aria-expanded="false"
@@ -128,9 +144,9 @@ const CategoryList = ({ menu }) => {
             >
               Casual Dinner
             </button>
-          </li>
+          </motion.li>
           {showCasualDinner ? <Casualdinner dinnerMenu={dinnerMenu} /> : null}
-          <li className={style.categoryitem}>
+          <motion.li variants={item} className={style.categoryitem}>
             <button
               className={styles.button}
               aria-expanded="false"
@@ -144,9 +160,9 @@ const CategoryList = ({ menu }) => {
             >
               Sushi
             </button>
-          </li>
+          </motion.li>
           {showSushi ? <Sushi sushiMenu={sushiMenu} /> : null}
-          <li className={style.categoryitem}>
+          <motion.li variants={item} className={style.categoryitem}>
             <button
               className={styles.button}
               aria-expanded="false"
@@ -160,11 +176,10 @@ const CategoryList = ({ menu }) => {
             >
               Ramen
             </button>
-          </li>
+          </motion.li>
           {showRamen ? <Ramen ramenMenu={ramenMenu} /> : null}
-        </ul>
+        </motion.ul>
       </div>
-     
     </div>
   );
 };
