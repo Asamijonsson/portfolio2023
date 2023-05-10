@@ -20,6 +20,20 @@ img {
   height: auto;
 }
 
+.article{
+  margin: 200px;
+}
+
+.card {
+  background-color: white;
+   padding: 3rem 5rem;
+}
+
+.card p{
+  padding-top:1rem;
+  line-height: 150%;
+}
+
 
 
 /* @media screen and (max-width: 768px) {
