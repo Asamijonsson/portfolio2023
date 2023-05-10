@@ -4,9 +4,9 @@ import style from "./Header.module.css";
 import NavLink from "./NavLink";
 
 
-const Header = ({ i, expanded, setExpanded }) => {
+const Header = () => {
   const [navOpen, setnavOpen] = useState();
-  const isOpen = i === expanded;
+ 
 
   const toggleHamburger = () => {
     setnavOpen(!navOpen);
@@ -25,11 +25,7 @@ const Header = ({ i, expanded, setExpanded }) => {
           <NavLink />{" "}
         </nav>
       ) : (
-        <motion.section
-        initial={false}
-        animate={{ backgroundColor: isOpen ? "#7eafac" : "#0055FF" }}
-        onClick={() => setExpanded(isOpen ? false : i)}
-        >
+       
         <motion.nav
         key="content"
         initial="collapsed"
@@ -41,9 +37,9 @@ const Header = ({ i, expanded, setExpanded }) => {
         }}
         transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
         >
-                <NavLink />
+          <NavLink />
         </motion.nav>
-        </motion.section>
+       
       )}
     </nav>
   );
