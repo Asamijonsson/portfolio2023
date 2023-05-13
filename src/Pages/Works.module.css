@@ -1,0 +1,27 @@
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+      }
+}
+
+
+@media screen and (max-width: 480px) {
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+      }
+
+}

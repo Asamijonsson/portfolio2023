@@ -7,12 +7,11 @@ import { Link } from "react-router-dom";
 const Aboutme = () => {
   return (
     <div className={style.background}>
-      <img src={aboutme} alt="" className={style.aboutmeimg} />
+      <img src={aboutme} alt="" className={style.img} />
       <Link to={"/aboutmejp"} className={style.aboutmeLink}>Japanese</Link>
       <article>
         <h2>About me</h2>
-        <div className={style.maintext}>
-          <p>
+                <p className={style.maintext}>
             Hello! My name is Asami, I'm a frontend developer and also chef from
             Japan. I built this website to showcase my frontend development
             skills. The website is Screen Reader-friendly, so please feel free
@@ -23,8 +22,7 @@ const Aboutme = () => {
             you would like to try my food based on the photos, please don't
             hesitate to contact me!
           </p>
-        </div>
-      </article>
+              </article>
 
       <article >
         <h2 className={style.aboutmeArticle}>I use these applications and languages for buiding this website</h2>

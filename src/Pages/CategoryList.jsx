@@ -7,7 +7,6 @@ import Ramen from "./Ramen";
 import styles from "./Button.module.css";
 import style from "./categoryList.module.css";
 
-import profile1 from "../image/profile1.png";
 const CategoryList = ({ menu }) => {
   const [showParty, setShowParty] = useState(false);
   const [showCasualDinner, setshowCasualDinner] = useState(false);
@@ -105,8 +104,6 @@ const CategoryList = ({ menu }) => {
 
   return (
     <div className={style.background} id="main-content">
-      <img className={style.img} src={profile1} alt="" />
-
       <div className={style.categoryContainer}>
         <motion.ul
           initial="hidden"
