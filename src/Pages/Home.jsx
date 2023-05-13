@@ -13,12 +13,7 @@ const Home = () => {
       </legend>
       <article className={style.article}>
         <motion.div
-        //  variants={{
-        //   open: { opacity: 1, height: "auto" },
-        //   collapsed: { opacity: 0, height: 0 }
-        // }}
-        // transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
-          Layout
+                 Layout
           onClick={() => setIsOpen(!isOpen)}
           className={style.card}
           style={{
@@ -26,7 +21,7 @@ const Home = () => {
             boxshadow: "0px 10px 30px rgba(0,0,0,0.5)",
           }}
         >
-          <motion.h2 Layout="position">Welcome to my website! </motion.h2>
+          <motion.h2 Layout="position" className={style.welcomeText}>Welcome to my website! </motion.h2>
           <AnimatePresence>
           {isOpen && (
             <motion.section
@@ -40,7 +35,7 @@ const Home = () => {
               }}
               transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
             >
-              <p>
+              <p className={style.articleText}>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Possimus minima placeat accusamus illo cumque temporibus
                 voluptates culpa neque odio natus, excepturi fuga, dolores
