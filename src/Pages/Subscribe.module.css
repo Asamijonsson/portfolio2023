@@ -1,11 +1,33 @@
 .subscribe{
     background-color: rgb(53, 92, 123);
     padding: 50px;
-    display: flex; 
+    display: flex;
+    text-align: center;
+   
 }
+.art{
+    padding: 200px;
+}
+.maintext {
+    justify-content: flex;
+    height: 150px;
+    width: 150px;
+    font-size: 25px;
+  border: 3px black;
+  background-color:rgb(255, 149, 161);
+  border-radius: 50%;
+  justify-self: stretch;
+  max-width: 50%;
+margin-left: 35%;
+  }
 
+  .text{
+    padding-top: 45px;
+  }
+  
 .card{
     margin: 30px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
