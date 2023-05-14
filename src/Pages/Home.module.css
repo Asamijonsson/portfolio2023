@@ -11,14 +11,12 @@
 .card {
   background-color: white;
    padding: 3rem 5rem;
-   cursor: pointer;
-}
+  }
 
 .text {
   margin-top: 0%;
   color: rgb(249, 249, 250);
-  cursor: hide;
-}
+  }
 
 .logo{
   margin-right: 50px;
