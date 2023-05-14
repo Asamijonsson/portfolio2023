@@ -8,9 +8,7 @@ const Subscribe = () => {
   return (
     <>
       <div className={style.subscribe}>
-
         <Card className={style.card}>
-
           <motion.p
             className={style.maintext}
             whileHover={{ scale: 1.2 }}
