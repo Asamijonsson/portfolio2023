@@ -1,11 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import style from "./Subscribe.module.css"
 
 const Subscribe=()=>{
 
     return(
-        <div>
-        <Card>
+        <div className={style.subscribe}>
+        <Card className={style.card}>
       <Card.Header as="h5">Featured</Card.Header>
       <Card.Body>
         <Card.Title>Special title treatment</Card.Title>
@@ -15,7 +16,7 @@ const Subscribe=()=>{
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
-    <Card>
+    <Card className={style.card}>
       <Card.Header as="h5">Featured</Card.Header>
       <Card.Body>
         <Card.Title>Special title treatment</Card.Title>
@@ -25,7 +26,7 @@ const Subscribe=()=>{
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
-    <Card>
+    <Card className={style.card}>
       <Card.Header as="h5">Featured</Card.Header>
       <Card.Body>
         <Card.Title>Special title treatment</Card.Title>

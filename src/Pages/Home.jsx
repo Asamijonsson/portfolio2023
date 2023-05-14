@@ -40,7 +40,7 @@ const Home = () => {
               >
                 <p className={style.articleText}>
                   Hi! I'm Asami. Thank you for visit my website. I'm a Front-end
-                  developer student with a great interest in Javascript,
+                  developer with a great interest in Javascript,
                   ReactJS, HTML & CSS, UX Design, and a bit of backend NodeJS.
                   Possesses a dedicated work ethic mind, with good communication
                   skills. Multicultural with deep knowledge of both Swedish and

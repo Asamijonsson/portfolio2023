@@ -11,12 +11,26 @@ const Aboutme = () => {
       <Link to={"/aboutmejp"} className={style.aboutmeLink}>
         Japanese
       </Link>
-      <article>
+      <article className={style.aboutme}>
         <h2>About me</h2>
         <p className={style.maintext}>
-          Hello! My name is Asami, I'm a frontend developer and also chef from
+          Hello! My name is Asami, Thank you for visit my website. I'm a Front-end
+          developer with a great interest in Javascript,
+          ReactJS, HTML & CSS, UX Design, and a bit of backend NodeJS.
+          Possesses a dedicated work ethic mind, with good communication
+          skills. Multicultural with deep knowledge of both Swedish and
+          Japanese cultures.
+        </p>
+      </article>
+
+      <article className={style.aboutwebsite}>
+        <h2>About this website</h2>
+        <p className={style.maintext}>
+          I'm a frontend developer and also chef from
           Japan. I built this website to showcase my frontend development
-          skills. The website is Screen Reader-friendly, so please feel free to
+          skills.
+          For deploy my website, I use Azure together with Github Action for CI/CD pipeline. I also used Azure DevOps for att understand pipeline in DevOps.
+          The website is Screen Reader-friendly, so please feel free to
           test it using your Screen Reader application. This is just my
           portfolio and all photos and artwork are copyrighted to me, so please
           do not use them without permission. However, if you like my website
@@ -27,7 +41,7 @@ const Aboutme = () => {
       </article>
 
       <article>
-        <h2 className={style.aboutmeArticle}>
+        <h2 className={style.aboutmeKnowledge}>
           I use these applications and languages for buiding this website
         </h2>
         <Knowledge />

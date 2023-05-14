@@ -1,0 +1,26 @@
+.subscribe{
+    background-color: rgb(53, 92, 123);
+    padding: 50px;
+    display: flex; 
+}
+
+.card{
+    margin: 30px;
+}
+
+@media screen and (max-width: 768px) {
+   .subscribe{
+    flex-direction: column;
+   }
+   .card{
+    margin: 10px;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+    .subscribe{
+        flex-direction: column;
+        padding: 10px;
+       }
+}
