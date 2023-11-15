@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import style from "./AboutmeJP.module.css";
-import aboutme from "../image/aboutme.JPG";
+// import aboutme from "../image/aboutme.JPG";
 import Knowledge from "../Pages/Knowledge";
 
 const AboutmeJP =()=>{
     return(
         <div>
  <div className={style.background}>
-      <img src={aboutme} alt="" className={style.img} />
+      {/* <img src={aboutme} alt="" className={style.img} /> */}
       <Link to={"/aboutme"} className={style.aboutmeJpLink}>English</Link>
       <article>
         <h2>About me</h2>
                 <p className={style.text}>
-            ご覧いただきありがとうございます。 このウェブサイトはわたしが今までフロントエンドの勉強習作ですが
-            調理師として海外で10年ほど仕事もしていました。“作品”の中にある写真は実際に自分で作ってきたものです。
+            ご覧いただきありがとうございます。 このウェブサイトはわたしのプロフィールデモサイトです。
             このサイトやわたしの作品に興味を持ってくださったなら幸いです。
             御用の際はコンタクトからメッセージを送ってください。
             

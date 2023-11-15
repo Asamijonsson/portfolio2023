@@ -1,9 +1,12 @@
 .text{
+  color: white;
     padding-left: 130px;
     padding-right: 130px;
     }
     
     .aboutmeArticle{
+      color: white;
+      font-size: 20px;
         padding-top: 50px;
         padding-left: 30px;
         padding-right: 30px;

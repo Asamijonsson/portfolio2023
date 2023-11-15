@@ -1,5 +1,5 @@
 import style from "./Aboutme.module.css";
-import aboutme from "../image/aboutme.JPG";
+// import aboutme from "../image/aboutme.JPG";
 import Knowledge from "./Knowledge";
 import { Link } from "react-router-dom";
 // import colorstyle from "../Color.module.css"
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Aboutme = () => {
   return (
     <div className={style.background}>
-      <img src={aboutme} alt="" className={style.img} />
+      {/* <img src={aboutme} alt="" className={style.img} /> */}
       <Link to={"/aboutmejp"} className={style.aboutmeLink}>
         Japanese
       </Link>
