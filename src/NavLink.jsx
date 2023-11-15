@@ -20,7 +20,7 @@ const NavLink = () => {
       </Link>
 
       <Link to={"/aboutme"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>About this website</h3>
+        <h3 className={colorstyle.primary}>About</h3>
       </Link>
       <Link to={"/contact"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Contact</h3>
