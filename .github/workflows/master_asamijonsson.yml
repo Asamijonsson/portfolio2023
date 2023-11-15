@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy Node.js app to Azure Web App - asamijonsson
-
+ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true
 on:
   push:
     branches:
