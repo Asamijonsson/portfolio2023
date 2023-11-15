@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div id="main-content">
       <legend className={style.herobackground}>
-        <img src={foodmain} alt="" className={style.img} />
+        {/* <img src={foodmain} alt="" className={style.img} /> */}
       </legend>
       <article className={style.article}>
         <motion.div

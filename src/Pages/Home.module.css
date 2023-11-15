@@ -11,6 +11,7 @@
 .card {
   background-color: white;
    padding: 3rem 5rem;
+  
   }
 
 .text {
@@ -20,6 +21,10 @@
 
 .logo{
   margin-right: 50px;
+}
+
+.welcomeText{
+  cursor: pointer;
 }
 
 

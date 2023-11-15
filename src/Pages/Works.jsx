@@ -4,7 +4,7 @@ import style from "./Works.module.css"
 const Works = ({ menu }) => {
   return (
     <div>
-        <img className={style.img} src={profile1} alt="" />
+        {/* <img className={style.img} src={profile1} alt="" /> */}
       <CategoryList menu={menu} />
     </div>
   );
