@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import foodmain from "../image/foodoriginal.re.jpg";
+// import foodmain from "../image/foodoriginal.re.jpg";
 import style from "./Home.module.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";

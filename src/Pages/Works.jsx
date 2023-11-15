@@ -1,6 +1,6 @@
 import CategoryList from "./CategoryList";
-import profile1 from "../image/profile1.png";
-import style from "./Works.module.css"
+// import profile1 from "../image/profile1.png";
+// import style from "./Works.module.css"
 const Works = ({ menu }) => {
   return (
     <div>
