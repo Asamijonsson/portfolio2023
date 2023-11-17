@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import style from "./Home.module.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Home = () => {
           }}
         >
           <motion.h2 Layout="position" className={style.welcomeText}>
-            Welcome to my website!{" "}
+            Welcome to my website!{" "}<IoIosArrowDown />
           </motion.h2>
           <AnimatePresence>
             {isOpen && (
