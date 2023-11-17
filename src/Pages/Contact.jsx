@@ -1,4 +1,4 @@
-import Home from "./Home"
+// import Home from "./Home"
 import colorstyle from "../Color.module.css"
 import style from "./Contact.module.css"
 const Contact =()=>{
