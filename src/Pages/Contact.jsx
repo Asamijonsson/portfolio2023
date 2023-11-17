@@ -7,7 +7,7 @@ const Contact =()=>{
            <form method="POST" action="https://formsubmit.co/momoji303@gmail.com" enctype="multipart/form-data">
             <h3 className={colorstyle.primary}>Send message</h3>
             <label className={style.title} for="inp" aria-labelledby="inp">Title</label><br />
-            <input type="hidden" name="_next" value="https://asamijonsson.azurewebsites.net.html"/>
+            <input type="hidden" name="_next" value="https://asamijonsson.azurewebsites.net/home.html"/>
             <input className={style.input} type="text" id="inp" aria-required="true" aria-roledescription="input" required/><br />
             <input type="email" name="email" placeholder="email" required/>
             <input type="text" name="subject" placeholder="subject" required/>
