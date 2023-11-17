@@ -77,7 +77,7 @@ function App() {
       <div className={style.MainApp}>
         <MainHeader />
         <Routes>
-          <Route path="home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="aboutme" element={<Aboutme />} />
           <Route path="contact" element={<Contact />} />
           <Route path="works" element={<Works menu={receipe} />} />
