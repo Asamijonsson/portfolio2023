@@ -8,7 +8,7 @@ const Contact =()=>{
                     <h3 className={colorstyle.primary}>Send message</h3>
             <input className={style.input} type="text" id="inp" aria-required="true" aria-roledescription="input" placeholder="Subject" required/>
             <input className={style.email} type="email" name="email" placeholder="email" required/>
-            <input className={style.textarea} type="text" name="message" placeholder="Write your message here" id="inp"  aria-required="true" aria-roledescription="textarea" required/>
+            <input className={style.textarea} type="text" name="message" placeholder="Write your message here" id="inp"  aria-required="true" aria-roledescription="input" required/>
             <button type="submit" className={style.button} >Send</button>
                     </form> 
             </div>
