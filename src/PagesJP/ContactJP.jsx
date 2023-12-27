@@ -1,7 +1,19 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Home from "../Pages/Home"
 import colorstyle from "../Color.module.css"
 import style from "./ContactJP.module.css"
-const Contact =()=>{
+const Contact =(e)=>{
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
     return(
         <div role="form" id="main-content" aria-label="Contact imformation">
             <form action="https://formsubmit.co/momoji832@hotmail.com" method="POST">
