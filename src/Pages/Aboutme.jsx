@@ -39,8 +39,8 @@ const Aboutme = () => {
           contact me!
         </p>
       </article>
-      <article>
-        <h2 className={style.aboutmeKnowledge}>
+      <article className={style.aboutmeKnowledge}>
+        <h2>
           I use these applications and languages for buiding this website
         </h2>
         <Knowledge />

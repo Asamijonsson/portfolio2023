@@ -11,11 +11,11 @@ const NavLink = () => {
           <h3 className={colorstyle.primary}>Home</h3>
         </Link>
         <Link to={"/subscribe"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Subscribe</h3>
+        <h3 className={colorstyle.primary}>Subscribe(mock-up)</h3>
       </Link>
 
       <Link to={"/works"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Works</h3>
+        <h3 className={colorstyle.primary}>Works(mock-up)</h3>
       </Link>
 
       <Link to={"/aboutme"} className={style.link} reloadDocument>
