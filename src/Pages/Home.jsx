@@ -24,7 +24,7 @@ const Home = () => {
           }}
         >
           <motion.h2 Layout="position" className={style.welcomeText}>
-            Welcome to my mock-up website!{" "}<IoIosArrowDown />
+            Welcome to my website!{" "}<IoIosArrowDown />
           </motion.h2>
           <AnimatePresence>
             {isOpen && (
