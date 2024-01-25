@@ -5,7 +5,7 @@ const Footer =()=>{
         <>
         <nav className={style.footerNav}>
     
-        <h3 className={colourstyle.primary}>©Asami Jönsson 2023</h3>
+        <h3 className={colourstyle.primary}>©Asami Jönsson 2024</h3>
         </nav>
         </>
     )
