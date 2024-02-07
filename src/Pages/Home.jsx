@@ -5,6 +5,7 @@ import style from "./Home.module.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
+import Weather from "./Weather";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,6 +57,7 @@ const Home = () => {
           </AnimatePresence>
         </motion.div>
       </article>
+      <Weather/>
     </div>
   );
 };

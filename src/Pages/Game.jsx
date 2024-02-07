@@ -1,4 +1,11 @@
-const Game = () =>{
 
+
+export default class Game{
+secretWord
+foundWord
+gallows
 }
-export default Game
+
+constructor(){
+    
+}
