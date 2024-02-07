@@ -36,12 +36,12 @@ Search
     <div className={style.weatherImg}>
 
     </div>
-    <div id="weatherTemp" className={style.weatherTemp}>24°C</div>
-    <div id="weatherLocation" className={style.weatherLocation}>Malmö</div>
+    <div id="weatherTemp" className={style.weatherTemp}>--K</div>
+    <div id="weatherLocation" className={style.weatherLocation}>City</div>
     <div className={style.dataContainer}>
         <div className={style.element}>
             <div className={style.data}>
-                <div id="humiditiyPercent" className={style.humidityPercent}>64%</div>
+                <div id="humiditiyPercent" className={style.humidityPercent}>--%</div>
                 <div className={style.text}>Humidity</div>
             </div>
         </div>
