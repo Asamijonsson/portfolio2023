@@ -27,6 +27,7 @@ location.innerHTML = data.name;
 
 return (
 <div className={style.container}>
+    <p className={style.text}>Check weather in your city!</p>
     <div className={style.topbar}>
         <input type="text"  id = "cityInput" className={style.cityInput}/>
         <button className={style.search} onClick={()=>{search()}}>
