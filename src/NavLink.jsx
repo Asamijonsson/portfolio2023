@@ -6,11 +6,11 @@ import colorstyle from "./Color.module.css";
 const NavLink = () => {
   return (
     <div className={style.navbar}>
-    
-        <Link to={"/"} className={style.link} reloadDocument>
-          <h3 className={colorstyle.primary}>Home</h3>
-        </Link>
-        <Link to={"/subscribe"} className={style.link} reloadDocument>
+
+      <Link to={"/"} className={style.link} reloadDocument>
+        <h3 className={colorstyle.primary}>Home</h3>
+      </Link>
+      <Link to={"/subscribe"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Subscribe(mock-up)</h3>
       </Link>
 
@@ -23,6 +23,10 @@ const NavLink = () => {
       </Link>
       <Link to={"/contact"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Contact</h3>
+      </Link>
+
+      <Link to={"pokemon"} className={style.link} reloadDocument>
+        <h3 className={colorstyle.primary}>Hitta Pokemon</h3>
       </Link>
     </div>
   );
