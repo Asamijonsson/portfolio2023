@@ -8,7 +8,7 @@ import Aboutme from "./Pages/Aboutme";
 import Contact from "./Pages/Contact";
 import Works from "./Pages/Works";
 import Subscribe from "./Pages/Subscribe.jsx"
-
+import Pokemon from "./Pages/pokemon.jsx"
 function App() {
   const receipe = [
     {
@@ -80,7 +80,8 @@ function App() {
           <Route path="aboutme" element={<Aboutme />} />
           <Route path="contact" element={<Contact />} />
           <Route path="works" element={<Works menu={receipe} />} />
-          <Route path="subscribe" element={<Subscribe/>}/>
+          <Route path="subscribe" element={<Subscribe />} />
+          <Route path="pokemon" element={<Pokemon/>}/>
         </Routes>
         <Footer />
       </div>

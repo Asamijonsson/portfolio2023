@@ -6,11 +6,11 @@
 }
 
 .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 20%;
+}
 
 
 .button {
@@ -24,33 +24,36 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .mainheader {
-        display: flex;
-        gap: 10px;
-        justify-content: flex-end;
-        padding-right: 50px;
-      }
-    }
+  .mainheader {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .img {
     display: none;
-    }
+  }
+
   .button {
     font-size: 10px;
   }
+
   .mainheader {
     display: flex;
     gap: 10px;
-      }
+  }
 }
 
 @media screen and (max-width: 480px) {
   .img {
     display: none;
-      }
+  }
+
   .mainheader {
     display: flex;
     gap: 10px;
-      }
-} 
+  }
+}
