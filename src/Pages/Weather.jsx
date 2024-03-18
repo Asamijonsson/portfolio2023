@@ -52,7 +52,7 @@ const weather = () => {
                 </div>
                 <div className={style.element}>
                     <div className={style.data}>
-                        <div id="windRate" className={style.windRate}>18 km/h</div>
+                        <div id="windRate" className={style.windRate}>-- km/h</div>
                         <div className={style.text}>Wind Speed</div>
                     </div>
                 </div>
