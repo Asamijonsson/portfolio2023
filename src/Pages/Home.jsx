@@ -5,7 +5,7 @@ import style from "./Home.module.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
-import Weather from "./Weather";
+import Weather from "../components/Weather";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,16 +48,16 @@ const Home = () => {
                   skills. Multicultural with deep knowledge of both Swedish and
                   Japanese cultures.
                 </p>
-                <a href="https://www.linkedin.com/in/asamijonsson/"  className={style.logo} >
+                <a href="https://www.linkedin.com/in/asamijonsson/" className={style.logo} >
                   <BsLinkedin />
                 </a>
-                <a href="mailto:momoji832@hotmail.com" className={style.logo}><FiMail/></a>
+                <a href="mailto:momoji832@hotmail.com" className={style.logo}><FiMail /></a>
               </motion.section>
             )}
           </AnimatePresence>
         </motion.div>
       </article>
-      <Weather/>
+      <Weather />
     </div>
   );
 };
