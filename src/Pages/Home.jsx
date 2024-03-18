@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import foodmain from "../image/foodoriginal.re.jpg";
 import style from "./Home.module.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
@@ -12,7 +11,7 @@ const Home = () => {
   return (
     <div id="main-content">
       <legend className={style.herobackground}>
-        {/* <img src={foodmain} alt="" className={style.img} /> */}
+
       </legend>
       <article className={style.article}>
         <motion.div
