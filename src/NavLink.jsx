@@ -26,7 +26,7 @@ const NavLink = () => {
       </Link>
 
       <Link to={"pokemon"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Hitta Pokemon</h3>
+        <h3 className={colorstyle.primary}>Look up Pokemon</h3>
       </Link>
     </div>
   );
