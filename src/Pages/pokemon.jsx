@@ -31,11 +31,7 @@ function AddPokemonForm() {
       <form onSubmit={handleSubmit} className={style.cardText}>
         <label>
           Pokemon Name:
-          <input
-            type="text"
-            value={pokemonName}
-            onChange={(e) => setPokemonName(e.target.value)}
-          />
+          <input type="text" value={pokemonName} onChange={(e) => setPokemonName(e.target.value.toLowerCase())}/>
         </label>
         <button className={style.button} type="submit">Call Pokemon</button>
       </form>
@@ -44,11 +40,7 @@ function AddPokemonForm() {
           <h1 className={style.cardText}>{pokemonData.name}</h1>
           <img src={pokemonData.sprites.other.dream_world.front_default} alt={pokemonData.name} />
         </div>
-      ) : (
-        error ? (<h3 className={style.cardText}> Wrong Pokemon Name!</h3>) : null
-      )
-      }
-
+      ) : (error ? (<h3 className={style.cardText}> Wrong Pokemon Name!</h3>) : null)}
     </div >
   );
 }
