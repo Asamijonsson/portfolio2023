@@ -5,10 +5,12 @@
 }
 
 .article{
+  padding-left: 20%;
   margin: 200px;
 }
 
 .card {
+  width: 70%;
   background-color: white;
    padding: 3rem 5rem;
   
@@ -24,7 +26,7 @@
 }
 
 .welcomeText{
-  cursor: pointer;
+   cursor: pointer;
 }
 
 
