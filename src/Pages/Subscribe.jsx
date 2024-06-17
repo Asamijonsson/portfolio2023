@@ -7,7 +7,7 @@ const Subscribe = () => {
 
   return (
     <>
-      <p>This page is mock-up</p>
+      <p className={style.bartext}>This page is a mock-up</p>
       <div className={style.subscribe}>
         <Card className={style.card}>
           <motion.p

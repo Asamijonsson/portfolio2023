@@ -40,7 +40,7 @@ const Home = () => {
                 transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
               >
                 <p className={style.articleText}>
-                  Hi! I'm Asami. Thank you for visit my website. I'm a Front-end
+                  Hi! I'm Asami. Thank you for visiting my website. I'm a Front-end
                   developer with a great interest in Javascript,
                   ReactJS, HTML & CSS, UX Design, and a bit of backend NodeJS.
                   Possesses a dedicated work ethic mind, with good communication

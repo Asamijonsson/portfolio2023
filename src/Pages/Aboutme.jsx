@@ -8,9 +8,9 @@ const Aboutme = () => {
   return (
     <div className={style.background}>
       {/* <img src={aboutme} alt="" className={style.img} /> */}
-      <Link to={"/aboutmejp"} className={style.aboutmeLink}>
+      {/* <Link to={"/aboutmejp"} className={style.aboutmeLink}>
         Japanese
-      </Link>
+      </Link> */}
       <article className={style.aboutme}>
         <h2>About me</h2>
         <p className={style.maintext}>

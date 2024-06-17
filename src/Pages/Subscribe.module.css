@@ -10,6 +10,10 @@
   padding: 200px;
 }
 
+.bartext{
+  color: white;
+}
+
 .maintext {
   justify-content: flex;
   height: 150px;
