@@ -1,7 +1,7 @@
 import style from "./Aboutme.module.css";
 // import aboutme from "../image/aboutme.JPG";
 import Knowledge from "../components/Knowledge";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import colorstyle from "../Color.module.css"
 
 const Aboutme = () => {
