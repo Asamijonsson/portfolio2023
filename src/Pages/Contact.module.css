@@ -1,8 +1,9 @@
 .form {
 display: flex;
 flex-direction: column;
-padding-left: 40%;
-padding-right: 40%;
+padding-left: 35%;
+padding-right: 35%;
+
 }
 
 input{
@@ -15,6 +16,13 @@ border-radius: 30px;
 color: white;
 background-color: black;
 margin-top: 2vh;
+}
+.bartext{
+    color: white;
+}
+
+.textarea{
+    padding-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
