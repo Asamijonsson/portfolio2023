@@ -4,6 +4,7 @@ import style from './Ffxiv.module.css';
 
 const Ffxiv = () => {
   const [items, setItems] = useState([]);
+  /* eslint-disable */
   const [searchWord, setSearchWord] = useState('');
   const [searValue, setSearValue] = useState('');
   const [searched, setSearched] = useState(false);
