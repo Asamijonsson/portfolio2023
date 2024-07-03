@@ -1,0 +1,13 @@
+.searchContainer {
+    margin: 70px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .item {
+    width: 30%;
+  }

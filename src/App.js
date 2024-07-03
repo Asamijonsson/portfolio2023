@@ -5,9 +5,9 @@ import MainHeader from "./MainHeader";
 import Footer from "./Footer";
 import Home from "./Pages/Home";
 import Aboutme from "./Pages/Aboutme";
-import Contact from "./Pages/Contact";
+import ItemDetail from "./components/Itemdetail.jsx";
 import Works from "./Pages/Works";
-import Subscribe from "./Pages/Subscribe.jsx"
+import Ffxiv from "./Pages/Ffxiv.jsx"
 import Pokemon from "./Pages/pokemon.jsx"
 function App() {
   const receipe = [
@@ -78,9 +78,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="aboutme" element={<Aboutme />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="item/:itemId" element={<ItemDetail />} />
           <Route path="works" element={<Works menu={receipe} />} />
-          <Route path="subscribe" element={<Subscribe />} />
+          <Route path="ffxiv" element={<Ffxiv />} />
           <Route path="pokemon" element={<Pokemon/>}/>
         </Routes>
         <Footer />

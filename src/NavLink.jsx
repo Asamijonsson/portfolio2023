@@ -10,21 +10,13 @@ const NavLink = () => {
       <Link to={"/"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Home</h3>
       </Link>
-      {/* <Link to={"/subscribe"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Subscribe</h3>
-      </Link> */}
-
-      {/* <Link to={"/works"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Works(mock-up)</h3>
-      </Link> */}
-
+      <Link id="ffxiv" to="/ffxiv" className={style.link}reloadDocument>
+      <h3 className={colorstyle.primary}>Look up FFXIVitems!</h3>
+      </Link>
       <Link to={"/aboutme"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>About</h3>
       </Link>
-      {/* <Link to={"/contact"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Contact</h3>
-      </Link> */}
-
+     
       <Link to={"pokemon"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Look up Pokemon</h3>
       </Link>
