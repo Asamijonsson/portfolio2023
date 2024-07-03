@@ -1,62 +1,8 @@
 
-.img {
-  max-width: 100%;
-  height: auto;
-}
-
-.article{
-  padding-left: 20%;
-  margin: 200px;
-}
-
-.card {
-  width: 70%;
-  background-color: white;
-   padding: 3rem 5rem;
-  
-  }
-
-.text {
-  margin-top: 0%;
-  color: rgb(249, 249, 250);
-  }
-
-.logo{
-  margin-right: 50px;
-}
-
-.welcomeText{
-   cursor: pointer;
-}
-
-
-@media screen and (max-width: 768px) {
-
-  .article{
-    margin: 50px;
-  }
-
-  .card {
-    background-color: white;
-     padding: 15px;
-  }
-
-  .welcomeText{
-    font-size: 15px;
-  }
-  
-  
-  
-}
-
-
-@media screen and (max-width: 480px) {
-  .article{
-    margin: 10px;
-  }
-
-  .articleText{
-    font-size: 5px;
-    }
-  
+div .text {
+  padding-left: 50px;
+  padding-top: 100px;
+  padding-right: 30%;
+  font-size: 100px;
+  white-space: pre-line;
 }
