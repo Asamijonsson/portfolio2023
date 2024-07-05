@@ -8,38 +8,7 @@ const ItemDetail = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  const fetchItemDetail = async (itemId) => {
-    try {
-      const itemResponse = await fetch(`https://xivapi.com/item/${itemId}`);
-      if (!itemResponse.ok) {
-        throw new Error('Item not found');
-      }
-      const itemData = await itemResponse.json();
-      console.log(itemData)
-
-      itemData.Description = cleanText(itemData.Description);
-    
-      if (itemData.Recipes && itemData.Recipes.length > 0) {
-        const recipeId = itemData.Recipes[0].ID;
-        const recipeResponse = await fetch(`https://xivapi.com/recipe/${recipeId}`);
-        if (!recipeResponse.ok) {
-          throw new Error('Recipe not found');
-        }
-        const recipeData = await recipeResponse.json();
-        itemData.recipeDetail = recipeData;
-      } else {
-        itemData.recipeDetail = null;
-      }
-
-      setItemDetail(itemData);
-    } catch (error) {
-      console.error('Error fetching item details:', error);
-      setItemDetail(null);
-    } finally {
-      setLoading(false);
-    }
-  };
-
+ 
   const cleanText = (text) => {
     if (!text) return '';
     // Remove new lines and extra spaces
@@ -50,6 +19,40 @@ const ItemDetail = () => {
   };
 
   useEffect(() => {
+    const fetchItemDetail = async (itemId) => {
+      try {
+        const itemResponse = await fetch(`https://xivapi.com/item/${itemId}`);
+        if (!itemResponse.ok) {
+          throw new Error('Item not found');
+        }
+        const itemData = await itemResponse.json();
+        console.log(itemData);
+
+        // Clean and sanitize description
+        itemData.Description = cleanText(itemData.Description);
+
+        // Fetch recipe details if available
+        if (itemData.Recipes && itemData.Recipes.length > 0) {
+          const recipeId = itemData.Recipes[0].ID;
+          const recipeResponse = await fetch(`https://xivapi.com/recipe/${recipeId}`);
+          if (!recipeResponse.ok) {
+            throw new Error('Recipe not found');
+          }
+          const recipeData = await recipeResponse.json();
+          itemData.recipeDetail = recipeData;
+        } else {
+          itemData.recipeDetail = null;
+        }
+
+        setItemDetail(itemData);
+      } catch (error) {
+        console.error('Error fetching item details:', error);
+        setItemDetail(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     fetchItemDetail(itemId);
   }, [itemId]);
 
