@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 const MarketBoard = () => {
    
         const dataCenter = 'Light'; // Replace with your desired data center
-        const itemId = '36060'; // Replace with the ID of the item you want to fetch data for
+        const itemId = '35390'; // Replace with the ID of the item you want to fetch data for
         const url = `https://universalis.app/api/${dataCenter}/${itemId}`;
         const [sellingItems, setSellingItems] = useState([]);
 const [loading, setLoading] = useState(true);

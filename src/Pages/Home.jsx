@@ -13,7 +13,7 @@ const Home = () => {
       Please enjoy!
 
       Feature update: I will implement a market board from FFXIV, where you can see item prices. 
-    </div>
+      </div>
     <Weather /></>)
 }
 

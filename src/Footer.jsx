@@ -5,7 +5,8 @@ const Footer =()=>{
         <>
         <nav className={style.footerNav}>
     
-        <h3 className={colourstyle.primary}>©Asami Jönsson 2024</h3>
+        <h3 className={colourstyle.primary}>ALL FINAL FANTASY XIV CONTENT IS PROPERTY OF
+        © 2024 SQUARE ENIX CO., LTD. All Rights Reserved. FINAL FANTASY XIV © SQUARE ENIX CO., LTD.</h3>
         </nav>
         </>
     )
