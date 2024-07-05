@@ -27,6 +27,8 @@ const Ffxiv = () => {
     }
   };
 
+  
+
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
     const searchWordParam = searchParams.get('searchWord');

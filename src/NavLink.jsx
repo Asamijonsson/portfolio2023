@@ -12,13 +12,12 @@ const NavLink = () => {
       </Link>
       <Link id="ffxiv" to="/ffxiv" className={style.link}reloadDocument>
       <h3 className={colorstyle.primary}>Look up FFXIVitems!</h3>
+      </Link>   
+      <Link to={"pokemon"} className={style.link} reloadDocument>
+        <h3 className={colorstyle.primary}>Look up Pokemon</h3>
       </Link>
       <Link to={"/aboutme"} className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>About</h3>
-      </Link>
-     
-      <Link to={"pokemon"} className={style.link} reloadDocument>
-        <h3 className={colorstyle.primary}>Look up Pokemon</h3>
       </Link>
     </div>
   );

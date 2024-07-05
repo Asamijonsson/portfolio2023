@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 
 const ItemDetail = () => {
   const { itemId } = useParams();
@@ -15,7 +16,9 @@ const ItemDetail = () => {
       }
       const itemData = await itemResponse.json();
       console.log(itemData)
-      // Fetch recipe details if available
+
+      itemData.Description = cleanText(itemData.Description);
+    
       if (itemData.Recipes && itemData.Recipes.length > 0) {
         const recipeId = itemData.Recipes[0].ID;
         const recipeResponse = await fetch(`https://xivapi.com/recipe/${recipeId}`);
@@ -35,6 +38,15 @@ const ItemDetail = () => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const cleanText = (text) => {
+    if (!text) return '';
+    // Remove new lines and extra spaces
+    text = text.replace(/\n+/g, ' ').replace(/\s+/g, ' ');
+    // Optionally, remove HTML tags if needed
+    text = text.replace(/<[^>]+>/g, '');
+    return text;
   };
 
   useEffect(() => {
@@ -82,7 +94,7 @@ const ItemDetail = () => {
         />
       )}
       <p>Level: {itemDetail.LevelItem}</p>
-      <p>Description: {itemDetail.Description}</p>
+      <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(itemDetail.Description) }}></p>
 
       {recipeDetail && (
         <div className="recipe-detail">
@@ -94,13 +106,14 @@ const ItemDetail = () => {
           <p>Crafting Class: {recipeDetail.ClassJob?.Name}</p>
 
           <p>Ingredients:</p>
-          <ul>{renderIngredients(recipeDetail)}</ul>
+          <ul style={{listStyleType:'none'}}>{renderIngredients(recipeDetail)}</ul>
         </div>
       )}
 
-      <button onClick={handleBackClick} style={{ color: 'white' }}>
+      <button onClick={handleBackClick} >
         Back
       </button>
+    
     </div>
   );
 };
