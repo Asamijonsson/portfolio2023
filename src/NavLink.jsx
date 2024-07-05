@@ -14,9 +14,9 @@ const NavLink = () => {
       <Link id="ffxiv" to="/ffxiv" className={style.link}reloadDocument>
       <h3 className={colorstyle.primary}>Look up FFXIVitems!</h3>
       </Link>   
-      <Link id="marketBoard" to="/marketboard" className={style.link}reloadDocument>
-      <h3 className={colorstyle.primary}>Look up Market Board</h3>
-      </Link>   
+      {/* <Link id="marketBoard" to="marketboard" className={style.link}reloadDocument>
+      <h3 className={colorstyle.primary}>Look up Market Board(coming soon)</h3>
+      </Link>    */}
       <Link to="/pokemon" className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}>Look up Pokemon</h3>
       </Link>
