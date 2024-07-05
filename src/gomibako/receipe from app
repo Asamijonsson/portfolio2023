@@ -1,0 +1,57 @@
+ // const receipe = [
+  //   {
+  //     id: 0,
+  //     category: "Party",
+  //     subcategory: [
+  //       {
+  //         categoryName: "appetizers",
+  //         foodName: [{ name: "Kimchi" }, { name: "Harumaki" }],
+  //       },
+  //       {
+  //         categoryName: "main",
+  //         foodName: [
+  //           {
+  //             name: "Okonomiyaki",
+  //           },
+  //           { name: "Tonkatsu" },
+  //         ],
+  //       },
+  //       {
+  //         categoryName: "dessert",
+  //         foodName: [{ name: "Goma dango" }, { name: "Matcha ice cream" }],
+  //       },
+  //     ],
+  //   },
+
+  //   {
+  //     id: 1,
+  //     category: "Casual dinner",
+  //     foodName: [
+  //       {
+  //         name: "Tempura",
+  //       },
+  //       { name: "Yakitori" },
+  //       { name: "Gyu Tataki" },
+  //     ],
+  //   },
+  //   {
+  //     id: 3,
+  //     category: "Sushi",
+  //     foodName: [
+  //       {
+  //         name: "Maki Sushi",
+  //       },
+  //       { name: "Nigiri" },
+  //     ],
+  //   },
+  //   {
+  //     id: 4,
+  //     category: "Ramen",
+  //     foodName: [
+  //       {
+  //         name: "Tonkotsu Ramen",
+  //       },
+  //       { name: "Miso Ramen" },
+  //     ],
+  //   },
+  // ];
