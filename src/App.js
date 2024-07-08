@@ -7,7 +7,7 @@ import Home from "./Pages/Home";
 import Aboutme from "./Pages/Aboutme";
 import ItemDetail from "./components/Itemdetail.jsx";
 import Ffxiv from "./Pages/Ffxiv.jsx"
-// import MarketBoard from "./Pages/MarketBoard.jsx";
+import MarketBoard from "./Pages/MarketBoard.jsx";
 import Pokemon from "./Pages/pokemon.jsx"
 function App() {
  
@@ -24,7 +24,7 @@ function App() {
           <Route path="aboutme" element={<Aboutme />} />
           <Route path="item/:itemId" element={<ItemDetail />} />
           <Route path="ffxiv" element={<Ffxiv />} />
-          {/* <Route path="marketboard" element={<MarketBoard/>}/> */}
+          <Route path="marketboard" element={<MarketBoard/>}/>
           <Route path="pokemon" element={<Pokemon/>}/>
         </Routes>
         <Footer />
