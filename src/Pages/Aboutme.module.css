@@ -5,10 +5,13 @@
   font-size: 30px;
 }
 
+.lubricant{
+  font-weight: bold;
+  font-size: 35px;
+}
 
 .aboutme{
   padding-top: 150px;
-  padding-bottom: 150px;
 }
 
 .aboutwebsite{

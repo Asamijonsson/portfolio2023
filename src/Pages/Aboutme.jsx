@@ -12,24 +12,24 @@ const Aboutme = () => {
         Japanese
       </Link> */}
       <article className={style.aboutme}>
-        <h2>About me</h2>
+        <h2 className={style.lubricant}>About me</h2>
         <p className={style.maintext}>
           Hello! My name is Asami, Thank you for visit my website. I'm a Front-end
           developer with a great interest in Javascript,
-          ReactJS, HTML & CSS, UX Design, and a bit of backend NodeJS.
+          ReactJS, HTML & CSS, UX Design, and a bit of backend NodeJS. Just now I'm studying
+          Back-end, Python, dotnet with C#.
           Possesses a dedicated work ethic mind, with good communication
           skills. Multicultural with deep knowledge of both Swedish and
           Japanese cultures.
         </p>
       </article>
 
-      {/* <article className={style.aboutwebsite}>
-        <h2>About this website</h2>
+      <article className={style.aboutwebsite}>
+        <h2 className={style.lubricant}>About this website</h2>
         <p className={style.maintext}>
-          I'm a frontend developer and also chef from
-          Japan. I built this website to showcase my frontend development
-          skills.
-          For deploy my website, I use Azure together with Github Action for CI/CD pipeline. I also used Azure DevOps for att understand pipeline in DevOps.
+          I built this website to showcase my frontend development
+          skills both study and my hobby because I llove Final Fantasy XIV! 
+          For deploy my website, I use XIVAPI, 'A FINAL FANTASY XIV: Online REST API', Azure together with Github Action for CI/CD pipeline. I also used Azure DevOps for att understand pipeline in DevOps.
           The website is Screen Reader-friendly, so please feel free to
           test it using your Screen Reader application. This is just my
           portfolio and all photos and artwork are copyrighted to me, so please
@@ -38,7 +38,7 @@ const Aboutme = () => {
           like to try my food based on the photos, please don't hesitate to
           contact me!
         </p>
-      </article> */}
+      </article>
       <article className={style.aboutmeKnowledge}>
         <h2>
           I use these applications and languages for buiding this website
