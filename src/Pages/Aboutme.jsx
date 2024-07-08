@@ -23,7 +23,7 @@ const Aboutme = () => {
         </p>
       </article>
 
-      <article className={style.aboutwebsite}>
+      {/* <article className={style.aboutwebsite}>
         <h2>About this website</h2>
         <p className={style.maintext}>
           I'm a frontend developer and also chef from
@@ -38,7 +38,7 @@ const Aboutme = () => {
           like to try my food based on the photos, please don't hesitate to
           contact me!
         </p>
-      </article>
+      </article> */}
       <article className={style.aboutmeKnowledge}>
         <h2>
           I use these applications and languages for buiding this website

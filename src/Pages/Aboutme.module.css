@@ -2,6 +2,7 @@
 .maintext {
   padding-left: 130px;
   padding-right: 130px;
+  font-size: 30px;
 }
 
 
@@ -58,7 +59,7 @@
     padding-left: 200px;
   }
   .maintext {
-    font-size: 10px;
+    font-size: 20px;
     padding: 15px;
   }
 }
