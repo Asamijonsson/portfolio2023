@@ -30,14 +30,7 @@ const Aboutme = () => {
           I built this website to showcase my frontend development
           skills both study and my hobby because I love Final Fantasy XIV! 
           For deploy my website, I use XIVAPI, 'A FINAL FANTASY XIV: Online REST API', Azure together with Github Action for CI/CD pipeline. I also used Azure DevOps for att understand pipeline in DevOps.
-          The website is Screen Reader-friendly, so please feel free to
-          test it using your Screen Reader application. This is just my
-          portfolio and all photos and artwork are copyrighted to me, so please
-          do not use them without permission. However, if you like my website
-          and are interested in using it for your restaurant, or if you would
-          like to try my food based on the photos, please don't hesitate to
-          contact me!
-        </p>
+                 </p>
       </article>
       <article className={style.aboutmeKnowledge}>
         <h2>
