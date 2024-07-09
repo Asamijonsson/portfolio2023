@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import style from "./pokemon.module.css"
 
 const API_URL = "https://pokeapi.co/api/v2/pokemon";
 
-function AddPokemonForm() {
+const AddPokemonForm = () =>{
   const [pokemonName, setPokemonName] = useState("");
   const [pokemonData, setPokemonData] = useState(null);
   const [error, setError] = useState(false);

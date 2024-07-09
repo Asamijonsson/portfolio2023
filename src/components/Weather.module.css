@@ -30,7 +30,6 @@
 
 .search{
     display: flex;
-    margin-top: 25px;
     width: 78px;
     height: 78px;
     background: white;
@@ -41,7 +40,7 @@
     border-radius: 40px;
    cursor: pointer;
     color: gray;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 400;   
 }
 
@@ -82,7 +81,8 @@
 
 .text{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
+    padding-right: 30px;
 }
 
