@@ -9,6 +9,7 @@
 }
 
 .button {
+  margin-left: 10px;
   background-color: rgb(253, 242, 37);
   color: black;
   border-radius: 40px;
