@@ -27,7 +27,7 @@ const Ffxiv = () => {
     }
   };
 
-  
+
 
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
@@ -64,7 +64,7 @@ const Ffxiv = () => {
         value={searValue}
         onChange={handleSearchChange}
         onKeyDown={handleKeyDown}
-        placeholder="Search for items..."
+        placeholder="e.g. potion"
       />
       <button onClick={() => {
         navigate(`?searchWord=${searValue}`);

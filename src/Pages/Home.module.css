@@ -1,15 +1,14 @@
-
 div .text {
   padding-left: 50px;
   padding-top: 100px;
   padding-right: 30%;
-  font-size: 80px;
+  font-size: 70px;
   white-space: pre-line;
 }
 
 @media screen and (max-width: 768px) {
   div .text {
-      font-size: 50px;
+    font-size: 50px;
     white-space: pre-line;
   }
 }
@@ -17,6 +16,6 @@ div .text {
 @media screen and (max-width: 480px) {
   div .text {
     font-size: 35px;
-  white-space: pre-line;
-}
+    white-space: pre-line;
+  }
 }
