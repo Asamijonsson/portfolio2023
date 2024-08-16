@@ -12,7 +12,7 @@ const Home = () => {
       I've also added a look up Pokémon, so you can find them as well.
       Please enjoy!
 
-      Feature update: I will implement a market board from FFXIV, where you can see item prices. 
+      {/* Feature update: I will implement a market board from FFXIV, where you can see item prices.  */}
       </div>
     <Weather /></>)
 }
