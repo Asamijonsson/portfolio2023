@@ -29,7 +29,7 @@ const Aboutme = () => {
         <p className={style.maintext}>
           I built this website to showcase my frontend development
           skills both study and my hobby because I love Final Fantasy XIV! 
-          For deploy my website, I use XIVAPI, 'A FINAL FANTASY XIV: Online REST API', Azure together with Github Action for CI/CD pipeline. I also used Azure DevOps for att understand pipeline in DevOps.
+          For deploy my website, I use XIVAPI, 'A FINAL FANTASY XIV: Online REST API', Azure together with Github Action for CI/CD pipeline. I also used Azure DevOps to understand pipeline in DevOps.
                  </p>
       </article>
       <article className={style.aboutmeKnowledge}>
