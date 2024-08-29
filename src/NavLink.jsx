@@ -11,6 +11,9 @@ const NavLink = () => {
       <Link to="/" className={style.link} reloadDocument>
         <h3 className={colorstyle.primary}><FaHome /></h3>
       </Link>
+      <Link to="works" className={style.link} reloadDocument>
+      <h3 className={colorstyle.primary}>Works</h3>
+      </Link>
       <Link id="ffxiv" to="/ffxiv" className={style.link}reloadDocument>
       <h3 className={colorstyle.primary}>Look up FFXIVitems!</h3>
       </Link>   

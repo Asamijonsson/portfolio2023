@@ -69,8 +69,7 @@ const CategoryList = ({ menu }) => {
     document.getElementById("btn4").setAttribute("aria-expanded", n);
   };
 
-  const party = menu
-    .filter((i) => i.category === "Party")
+  const party = menu.filter((i) => i.category === "Party")
     .map(({ id, category, subcategory }) => ({ id, category, subcategory }));
   const partyMenu = party[0].subcategory.map(({ categoryName, foodName }) => ({
     categoryName,
